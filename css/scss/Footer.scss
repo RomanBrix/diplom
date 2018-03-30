@@ -1,0 +1,189 @@
+.footer{
+  .footer-info{
+    //height: 200px;
+    background: rgba(45, 50, 62, 1);
+    position: relative;
+    display: flex;
+    &:after{
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background: rgba(61, 66, 80, 1);
+      left: calc(50% - .5px);
+      top: 0;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 50%;
+      background: rgba(61, 66, 80, 1);
+      right: 0;
+      top: calc(50% - .5px);
+    }
+    .left{
+      width: 50%;
+      height: 100%;
+      padding: 25px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .logo{
+          background: linear-gradient(to top left, rgba(128, 88, 227, 1) 50%, rgba(245, 73, 143, 1) 50%);
+          color: white;
+        font-size:3em;
+          padding: 9px 20px;
+          //border: 1px solid;
+          //margin-right: 5px;
+          //transform: scale(2);
+          border-radius: 50%;
+        margin-bottom:15px;
+        font-weight:bold;
+        user-select: none;
+      }
+      .footer-contacts{
+        color: white;
+        text-decoration: none;
+        margin-bottom: 5px;
+        transition: .25s;
+        &:hover{
+          color:rgba(128, 93, 224, 1);
+        }
+      }
+      .socials{
+        a {
+          color: white;
+          text-decoration: none;
+          transition: .15s;
+          &:first-child {
+            margin-right: 10px;
+          }
+          &:hover {
+            //color:rgba(128, 93, 224, 1);
+            color: rgba(243, 77, 143, 1);
+          }
+          i {
+            font-size: 2em;
+            cursor: pointer;
+            &:before {
+              margin: 0;
+              //border: 1px solid;
+              border-radius: 50%;
+              padding: 10px;
+              background: rgba(255, 255, 255, .1);
+              transition: .25s;
+              //background: linear-gradient(to top left, rgba(128, 88, 227, .3) 50%, rgba(245, 73, 143, .3) 50%);
+            }
+          }
+        }
+      }
+    }
+    .right{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      .top{
+        height: 50%;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        h4{
+          margin-left: 25px;
+          margin-top: 0;
+          margin-bottom: 15px;
+        }
+        ul{
+
+          list-style: none;
+          display: flex;
+          align-items:center;
+          margin:0;
+          padding:0;
+          margin-left: 30px;
+
+          li{
+            margin-right:10px;
+            a{
+              color: white;
+              text-decoration: none;
+              transition: .25s;
+              &:hover{
+                color: rgba(243, 77, 143, 1);
+              }
+            }
+          }
+        }
+      }
+      .bottom{
+        height: 50%;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        h3{
+          margin-left: 25px;
+          margin-top: 0;
+        }
+        .input{
+          width: 75%;
+          margin-left: 25px;
+          display: flex;
+          align-items: center;
+          position: relative;
+          color: white;
+          input{
+            background: transparent;
+            border: 1px solid rgba(61, 66, 80, 1);
+            padding: 10px 10px;
+            width: 100%;
+            border-radius: 50px;
+            font-style: italic;
+            font-weight: 100;
+            outline:none;
+            color: white;
+            transition: .25s;
+            &:focus{
+              outline:none;
+              //transform: scale(1.2);
+              border-bottom: 3px solid rgba(61, 66, 80, 1);
+
+            }
+          }
+          .btn-send{
+            position: absolute;
+            right: 0;
+            width: 30%;
+            border: 1px solid rgba(46, 139, 132, 1);
+            height: 100%;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: .8em;
+            cursor: pointer;
+            transition: .25s;
+            &:hover{
+              background: rgba(70, 203, 183, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-copyright{
+    min-height: 30px;
+    background: rgba(26, 31, 39, 1);
+    display: flex;
+    align-items: center;
+    font-size: .8em;
+    justify-content: center;
+    color: rgba(89, 95, 107, 1);
+  }
+}

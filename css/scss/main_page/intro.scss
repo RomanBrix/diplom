@@ -1,0 +1,118 @@
+.intro{
+  background: rgba(243, 72, 141, 1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 500px;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  .slide {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: .45s;
+
+    &:nth-child(1){
+      //bottom: -100%;
+    }
+    &:nth-child(2){
+      bottom: -100%;
+    }
+    &:nth-child(3){
+      bottom: -200%;
+    }
+
+
+    i{
+      font-size: 15em;
+      margin-left: -50px;
+
+      &:before{
+        //margin: 0;
+        //border: 1px solid;
+        //border-radius: 50%;
+        //padding: 70px;
+        //background: rgba(255, 255, 255, .3);
+      }
+    }
+    .intro-box {
+      margin-right: -50px;
+      height: 200px;
+      width: 300px;
+      background: rgba(44, 49, 62, 1);
+      padding: 10px;
+      .intro-box-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px dashed rgba(69, 75, 88, 1);
+        align-items: center;
+        justify-content: center;
+        p {
+          margin: 0;
+          font-weight: 100;
+          font-size: .9em;
+          margin-bottom: 5px;
+        }
+        h2 {
+          margin-top: 0;
+          margin-bottom: 50px;
+        }
+        .btn {
+          height: 45px;
+          width: 145px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(62, 203, 183, 1);
+          border-radius: 45px;
+          transition: .25s;
+          cursor: pointer;
+          box-shadow: 0 10px 18px 0 rgba(0, 0, 0, .2);
+          &:hover {
+            background: #57d8c6;
+            transform: scale(1.1);
+            box-shadow: 0 0 18px 1px rgba(0, 0, 0, .4);
+          }
+        }
+      }
+    }
+  }
+  .slider-config{
+    position: absolute;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: 30px;
+    .circle{
+      width: 10px;
+      height: 10px;
+      background: transparent;
+      border-radius: 50%;
+      border: 1px solid white;
+      cursor: pointer;
+
+      &:not(:nth-child(3)){
+        margin-bottom: 10px;
+      }
+    }
+    .circle-active{
+      background: white;
+      //border-color: black;
+    }
+  }
+}
+
+
+
+
+
+

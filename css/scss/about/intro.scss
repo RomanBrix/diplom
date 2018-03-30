@@ -1,0 +1,103 @@
+.intro{
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+
+  .accordion{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0,0,0,.3);
+    font-size: 3em;
+    cursor: pointer;
+    position: relative;
+    transition: font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11), width 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+    &:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      top: -100%;
+      text-align: center;
+      color: rgba(0,0,0,.3);
+      font-size: .5em;
+      //transition: cubic-bezier(0.61,-0.19, 0.7,-0.11);
+      left: 0;
+      transition: .25s;
+
+
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: -100%;
+      text-align: center;
+      color: rgba(0,0,0,.3);
+      font-size: .5em;
+      transition: .25s;
+    }
+  }
+  .open{
+    width: 40%;
+    font-size: 6em;
+    &:before{
+      //transition: cubic-bezier(0.61,-0.19, 0.7,-0.11);
+      font-size: .5em;
+      top: 0;
+    }
+    &:after{
+      //transition: cubic-bezier(0.61,-0.19, 0.7,-0.11);
+      font-size: .5em;
+      bottom: 0;
+    }
+  }
+  #panel1{
+    background: rgba(203, 230, 187, 1);
+    &:before{
+      content: 'Hey';
+    }
+    &:after{
+      content: 'Work';
+    }
+  }
+  #panel2{
+    background: rgba(242, 221, 143, 1);
+    &:before{
+      content: 'And';
+    }
+    &:after{
+      content: 'Money';
+    }
+  }
+  #panel3{
+    background: rgba(233, 148, 136, 1);
+    &:before{
+      content: 'In';
+    }
+    &:after{
+      content: 'Corner';
+    }
+  }
+  #panel4{
+    background: rgba(126, 127, 153, 1);
+    &:before{
+      content: 'Of';
+    }
+    &:after{
+      content: 'Wide';
+    }
+  }
+  #panel5{
+    background: rgba(151, 167, 178, 1);
+    &:before{
+      content: 'It';
+    }
+    &:after{
+      content: 'Than idleness';
+    }
+  }
+}

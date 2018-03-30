@@ -1,0 +1,21 @@
+.NotFound{
+  min-height: calc(100vh - 80px);
+  background: rgba(248, 169, 17, 1);
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  h1{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 12em;
+    color: rgba(243, 77, 143, 1);
+  }
+  h2{
+    margin: 0;
+    font-size: 4em;
+    color: rgba(128, 98, 222, 1);
+  }
+}
