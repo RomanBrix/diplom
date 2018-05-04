@@ -4,6 +4,8 @@ import { NavLink, Link } from 'react-router-dom';
 
 export default class Header extends Component {
     render(){
+        const { adminLogin } = this.props;
+
         return(
             <div className="header">
                 <ul className="menu">
@@ -26,14 +28,25 @@ export default class Header extends Component {
                     <li>
                         <NavLink to="/work" activeStyle={{ color: 'rgba(126, 89, 226, 1)' }}>Работа</NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/archive" activeStyle={{ color: 'rgba(126, 89, 226, 1)' }}>
-                            Архив
-                        </NavLink>
-                    </li>
+                    {/*<li>*/}
+                        {/*<NavLink to="/archive" activeStyle={{ color: 'rgba(126, 89, 226, 1)' }}>*/}
+                            {/*Архив*/}
+                        {/*</NavLink>*/}
+                    {/*</li>*/}
                     <li>
                         <NavLink to="/contacts" activeStyle={{ color: 'rgba(126, 89, 226, 1)' }}>Контакты</NavLink>
                     </li>
+                    {
+                        adminLogin ?
+                            <li>
+                                <NavLink to="/admin" activeStyle={{ color: 'rgba(126, 89, 226, 1)' }}>Admin</NavLink>
+                            </li>
+                            :
+                            null
+                    }
+                    {/*<li>*/}
+                        {/*<NavLink to="/admin" activeStyle={{ color: 'rgba(126, 89, 226, 1)' }}>Admin</NavLink>*/}
+                    {/*</li>*/}
                 </ul>
                 <ul className="fast-contact">
                     <li>

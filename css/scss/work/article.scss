@@ -1,0 +1,177 @@
+.one{
+  .head{
+    //position: fixed;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: rgba(70, 202, 182, 1);
+    .back{
+      //flex: .5 auto;
+      position: absolute;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+      font-size: 1.2em;
+      transition: .25s;
+      cursor: pointer;
+      user-select: none;
+      i{
+        font-size: 1.5em;
+        text-shadow: 0 0 10px;
+      }
+      &:hover{
+        color: rgba(243, 77, 143, 1);
+        transform: scale(1.2);
+      }
+    }
+    h1{
+      margin: 0;
+      flex: 2 auto;
+    }
+    .contact{
+      //flex: .2 auto;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 25px;
+      a{
+        text-decoration: none;
+        color: white;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        transition: .25s;
+        i{
+          font-size: 2em;
+          margin-right: 5px;
+        }
+        &:hover{
+          color: rgba(243, 77, 143, 1);
+        }
+      }
+
+    }
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(244, 245, 246, 1);
+    .info-content{
+      width: 85%;
+      padding: 10px 25px;
+      background: white;
+      color: black;
+      .meta-tags{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        color: rgba(107, 120, 132, 1);
+        span {
+          display: flex;
+          align-items: center;
+          font-size: 1.2em;
+          i {
+            font-size: 1.4em;
+            color: rgba(77, 202, 182, 1);
+          }
+
+          &:nth-child(2){
+            font-style: italic;
+            font-weight: bold;
+            i{
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+      .city{
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        i{
+          font-size: 1.4em;
+          color: rgba(77, 202, 182, 1);
+        }
+      }
+      .student{
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+
+        i {
+          font-size: 1.4em;
+          color: rgba(77, 202, 182, 1);
+        }
+      }
+      .description{
+        h2{
+          text-align: center;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: rgba(107, 120, 133, 1);
+
+          &:before, &:after{
+            content: "";
+            position: absolute;
+            width: 35%;
+            height: 1px;
+            background: rgba(77, 202, 182, 1);
+            top: calc(50% - .5px);
+          }
+          &:before{
+            left: 0;
+          }
+          &:after{
+            right: 0;
+          }
+        }
+        p{
+          font-size: 17px;
+          line-height: 1.45;
+          font-family: Arial,Helvetica,sans-serif;
+        }
+      }
+      .btn-container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        .send{
+          //height: 45px;
+          //width: 145px;
+          color: white;
+          padding: 15px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(77, 202, 182, 1);
+          //border: 1px solid white;
+          border-radius: 45px;
+          transition: .25s;
+          cursor: pointer;
+          box-shadow: 0 10px 18px 0 rgba(0, 0, 0, .2);
+          text-transform: capitalize;
+          &:hover{
+            //background: #57d8c6;
+            transform: scale(1.1);
+            box-shadow: 0 0 18px 1px rgba(0, 0, 0, .4);
+          }
+        }
+      }
+    }
+  }
+}

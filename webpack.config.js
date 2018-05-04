@@ -24,11 +24,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             // chunks:['/scripts/index'],
+            // favicon: 'public/src/favicon.ico',
             template: PATHS.source + '/pug/index.pug'
         })
     ],
-    devtool: NODE_ENV === 'dev' ? 'source-map' : false,
-    watch: NODE_ENV === 'dev' ? true : false,
+    // devtool: NODE_ENV === 'dev' ? 'source-map' : false,
+    // watch: NODE_ENV === 'dev' ? true : false,
     watchOptions: {
         // aggrigateTimeout: 100
     },
@@ -91,15 +92,19 @@ module.exports = {
     },
     devServer: {
         inline: true,
-        contentBase: './',
+        contentBase: '/',
         // historyApiFallback: {
         //     index: 'index.html'
         // }
         stats: 'errors-only',
         port: 1488,
-        historyApiFallback: {
-            index: 'index.html'
-        }
+        historyApiFallback: true,
+        // hot: true
+        // historyApiFallback: {
+        //     historyApiFallback: true,
+        //     disableDotRule: true
+        // },
+
     }
     // ,
     // devServer: {

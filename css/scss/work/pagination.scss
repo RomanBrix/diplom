@@ -1,0 +1,29 @@
+/*!
+ * Copyright (c) 2018.  r.b.Corp
+ */
+
+.pagination{
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+
+  .pagination-counter{
+    margin: 0 2px;
+    //border: 1px solid rgba(70, 203, 183, 1);
+    background: rgba(70, 203, 183, 1);
+    padding: 10px;
+    cursor: pointer;
+    transition: .25s;
+    color: white;
+
+    &:hover{
+      background: rgba(243, 77, 143, 1);
+      color: white;
+    }
+  }
+  .pag-active{
+    background: rgba(128, 94, 225, 1);
+    color: white;
+  }
+}

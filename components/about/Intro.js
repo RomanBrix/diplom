@@ -14,7 +14,6 @@ export default class Intro extends Component {
 
         if(accordion[index] !== target) return;
 
-        console.log(accordion[index]);
         $(target).toggleClass('open');
     }
 

@@ -4,7 +4,7 @@
   display: flex;
   align-items: stretch;
   overflow: hidden;
-
+  background: rgba(151, 167, 178, 1);
   .accordion{
     width: 20%;
     display: flex;
@@ -57,6 +57,7 @@
   }
   #panel1{
     background: rgba(203, 230, 187, 1);
+    animation: intro 1.2s cubic-bezier(0.61,-0.19, 0.7,-0.11) 0s 1;
     &:before{
       content: 'Hey';
     }
@@ -66,6 +67,8 @@
   }
   #panel2{
     background: rgba(242, 221, 143, 1);
+    animation: intro 1.2s cubic-bezier(0.61,-0.19, 0.7,-0.11) .7s 1;
+
     &:before{
       content: 'And';
     }
@@ -75,6 +78,7 @@
   }
   #panel3{
     background: rgba(233, 148, 136, 1);
+    animation: intro 1.2s cubic-bezier(0.61,-0.19, 0.7,-0.11) 1.4s 1;
     &:before{
       content: 'In';
     }
@@ -84,6 +88,8 @@
   }
   #panel4{
     background: rgba(126, 127, 153, 1);
+    animation: intro 1.2s cubic-bezier(0.61,-0.19, 0.7,-0.11) 2.1s 1;
+
     &:before{
       content: 'Of';
     }
@@ -93,11 +99,27 @@
   }
   #panel5{
     background: rgba(151, 167, 178, 1);
+    animation: intro 1.2s cubic-bezier(0.61,-0.19, 0.7,-0.11) 2.8s 1;
+
     &:before{
-      content: 'It';
+      content: 'It`s';
     }
     &:after{
-      content: 'Than idleness';
+      content: 'Than Idleness';
+      font-size: .4em;
     }
   }
+}
+@keyframes intro {
+  //0%  { width: 20% }
+  //10% { width: 25% }
+  //20% { width: 30% }
+  //30% { width: 25% }
+  //40% { width: 22% }
+  50% { width: 25%; font-size: 4em; }
+  //60% { width: 30% }
+  //70% { width: 25% }
+  //80% { width: 22% }
+  //90% { width: 25% }
+  //100% {width: 20% }
 }

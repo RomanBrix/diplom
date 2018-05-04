@@ -20,7 +20,37 @@ html, body{
       @import "work/index";
       @import "./about/index";
       @import "Footer";
+      @import "admin/index";
       //@include ""
+
     }
+  }
+  .fade-enter{
+    opacity:0;
+  }
+  .fade-enter-active{
+    opacity:1;
+    transition: .3s ease-out;
+  }
+  .fade-leave{
+    opacity:1;
+  }
+  .fade-leave-active{
+    opacity:0;
+    transition: .3s ease-out;
+  }
+  .fade-appear{
+    opacity:0;
+  }
+  .fade-appear-active{
+    opacity:1;
+    transition: .3s ease-out;
+  }
+  .animationGroup{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
   }
 }

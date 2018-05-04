@@ -4,10 +4,14 @@ import WeAre from "./WeAre";
 import About from "./About";
 
 export default class Main extends Component {
-
+    constructor(props){
+        super(props);
+        window.scrollTo(0, 0);
+    }
     render() {
-        console.log(this.props);
+        // console.log(this.props);
         const { history, location, match, frontRedux } = this.props;
+        // console.log(frontRedux.works.length);
         const { works, archivedWorks } = frontRedux;
         return (
             <div className="main">

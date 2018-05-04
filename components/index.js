@@ -1,7 +1,15 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+
 import {
-    testFunc
+    testFunc,
+    loginFunc,
+    checkLoginAfterGlobalReload,
+    getWorks,
+    getArchWorks,
+    addNewWork,
+    archivedWork,
+    logOut
 } from "../redux/front/front-actions";
 import App from "./App";
 
@@ -14,5 +22,12 @@ const mapStateToProps = ( state ) => {
 export default connect(
     mapStateToProps,
     {
-        testFunc
+        testFunc,
+        loginFunc,
+        checkLoginAfterGlobalReload,
+        getWorks,
+        getArchWorks,
+        addNewWork,
+        archivedWork,
+        logOut
     })(App);

@@ -1,0 +1,53 @@
+/*!
+ * Copyright (c) 2018.  r.b.Corp
+ */
+.features{
+  display: flex;
+  //align-items: center;
+  justify-content: center;
+  background: white;
+
+  .features-content{
+    color: black;
+    width: 75%;
+  }
+
+  h3{
+    font-size: 2em;
+  }
+  .badges{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .badge{
+      width: 300px;
+      display: flex;
+      align-items: flex-start;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      i{
+        font-size: 2em;
+        margin-right: 15px;
+        //color: rgba(244, 167, 62, 1);
+        color: rgba(243, 77, 143, 1);
+      }
+      .text{
+        h4{
+          margin-top: 0;
+        }
+        p{
+          line-height: 1.45;
+          color: rgba(77, 82, 92, 1);
+        }
+      }
+
+      &:nth-child(2){
+        i{
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+
+}
